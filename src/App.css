@@ -1,14 +1,25 @@
 :root{
-  --background-gradient-1: red;
-  --background-gradient-2: blue;
+  --background-gradient-1: #1e272e;
+  --background-gradient-2: #485460;
   --text-color: #ecf0f1;
   --shadow-color: black;
-  --highlight-color: green;
+  --highlight-color: #ff3f34;
 }
 
 *{
   margin: 0;
   padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+  transition: .3s all;
+}
+
+a:hover{
+  color: var(--highlight-color);
+  transition: .3s all;
 }
 
 body{
@@ -36,11 +47,25 @@ div{
 }
 
 h1{
+  font-size: 6vh;
+
   transition: .3s all;
   cursor: default;
 }
 
 h1:hover{
+  transition: .5s all;
+  text-shadow: 1px 1px 6px var(--shadow-color);
+}
+
+h3{
+  font-size: 3vh;
+
+  transition: .3s all;
+  cursor: default;
+}
+
+h3:hover{
   transition: .5s all;
   text-shadow: 1px 1px 6px var(--shadow-color);
 }
@@ -56,17 +81,9 @@ i:hover{
 
 /* ===== TITLE CONTAINER ===== */
 
-.titleContainer h1{
-  font-size: 6vh;
-}
-
 .titleContainer i{
   font-size: 6vh;
   transition: .5s all;
-}
-
-.titleContainer h3{
-  font-size: 3vh;
 }
 
 /* ===== PROFILE IMAGE CONTAINER ===== */
@@ -89,4 +106,25 @@ i:hover{
 .profileImageContainer .profileDiv:hover{
   transition: .5s all;
   box-shadow: 1px 1px 6px var(--shadow-color);
+}
+
+/* ===== SOCIAL MEDIA BUTTONS CONTAINER ===== */
+
+.socialButtonsContainer{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.socialButtonsContainer i{
+  font-size: 6vh;
+  margin: 10px;
+
+  transition: .5s all;
+}
+
+.socialButtonsContainer i:hover{
+  font-size: 7vh;
+
+  transition: .5s all;
 }
