@@ -1,9 +1,16 @@
 import React from 'react';
 
-const ContactInformation = () => {
+const ContactInformation = ( props ) => {
     return (
         <div className="contactInformationContainer">
-            <h1>This is the contact information.</h1>
+            <a href={`mailto:${props.email}`}>
+                <i className="fas fa-envelope"></i>
+                {props.email}
+            </a>
+            <a href={`tel: ${props.phone}`}>
+                <i className="fas fa-phone-alt"></i>
+                {props.phone}
+            </a>
         </div>
     );
 }

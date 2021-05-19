@@ -14,12 +14,12 @@
 a{
   text-decoration: none;
   color: var(--text-color);
-  transition: .3s all;
+  transition: .2s all;
 }
 
 a:hover{
   color: var(--highlight-color);
-  transition: .3s all;
+  transition: .2s all;
 }
 
 body{
@@ -34,6 +34,7 @@ body{
   overflow-y: hidden;
   overflow-y: -moz-hidden-unscrollable;
 
+  background-color: var(--background-gradient-1);
   background-image: linear-gradient(to bottom right, var(--background-gradient-1), var(--background-gradient-2));
   color: var(--text-color);
   text-shadow: 3px 3px 3px var(--shadow-color);
@@ -49,33 +50,33 @@ div{
 h1{
   font-size: 6vh;
 
-  transition: .3s all;
+  transition: .2s all;
   cursor: default;
 }
 
 h1:hover{
-  transition: .5s all;
+  transition: .2s all;
   text-shadow: 1px 1px 6px var(--shadow-color);
 }
 
 h3{
   font-size: 3vh;
 
-  transition: .3s all;
+  transition: .2s all;
   cursor: default;
 }
 
 h3:hover{
-  transition: .5s all;
+  transition: .2s all;
   text-shadow: 1px 1px 6px var(--shadow-color);
 }
 
 i{
-  transition: .5s all;
+  transition: .2s all;
 }
 
-i:hover{
-  transition: .5s all;
+i:hover::after{
+  transition: .2s all;
   text-shadow: 1px 1px 6px var(--shadow-color);
 }
 
@@ -83,7 +84,7 @@ i:hover{
 
 .titleContainer i{
   font-size: 6vh;
-  transition: .5s all;
+  transition: .2s all;
 }
 
 /* ===== PROFILE IMAGE CONTAINER ===== */
@@ -99,12 +100,12 @@ i:hover{
   background-repeat: no-repeat;
   background-size: cover;
 
-  transition: .5s all;
+  transition: .2s all;
   box-shadow: 3px 3px 3px var(--shadow-color);
 }
 
 .profileImageContainer .profileDiv:hover{
-  transition: .5s all;
+  transition: .2s all;
   box-shadow: 1px 1px 6px var(--shadow-color);
 }
 
@@ -120,11 +121,25 @@ i:hover{
   font-size: 6vh;
   margin: 10px;
 
-  transition: .5s all;
+  transition: .2s all;
 }
 
-.socialButtonsContainer i:hover{
+.socialButtonsContainer i:hover::after{
   font-size: 7vh;
 
-  transition: .5s all;
+  transition: .2s all;
+}
+
+/* ===== CONTACT INFORMATION CONTAINER ===== */
+
+.contactInformationContainer a{
+  margin: 10px;
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+
+.contactInformationContainer i{
+  font-size: 3vh;
+
+  margin-right: 10px;
 }
