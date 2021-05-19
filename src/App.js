@@ -3,6 +3,7 @@ import Title from './components/Title.jsx';
 import ProfileImage from './components/ProfileImage.jsx';
 import SocialButtons from './components/SocialButtons.jsx';
 import ContactInformation from './components/ContactInformation.jsx';
+import mainImage from './images/mainImage.jpeg';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <h1>Cosmin Ilie</h1> {/* Name */}
         <h3>Frontend + CMS Developer</h3> {/* Description */}
       </Title>
-      <ProfileImage />
+
+      <ProfileImage image={mainImage}/>
       <SocialButtons />
       <ContactInformation />
     </div>

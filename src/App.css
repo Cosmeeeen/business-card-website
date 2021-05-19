@@ -12,14 +12,16 @@
 }
 
 body{
+  text-align: center;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
   height: 100vh;
-  overflow: hidden;
-  overflow: -moz-hidden-unscrollable;
+  overflow-y: hidden;
+  overflow-y: -moz-hidden-unscrollable;
 
   background-image: linear-gradient(to bottom right, var(--background-gradient-1), var(--background-gradient-2));
   color: var(--text-color);
@@ -55,7 +57,7 @@ i:hover{
 /* ===== TITLE CONTAINER ===== */
 
 .titleContainer h1{
-  font-size: 8vh;
+  font-size: 6vh;
 }
 
 .titleContainer i{
@@ -64,5 +66,27 @@ i:hover{
 }
 
 .titleContainer h3{
-  font-size: 4vh;
+  font-size: 3vh;
+}
+
+/* ===== PROFILE IMAGE CONTAINER ===== */
+.profileImageContainer .profileDiv{
+  border-radius: 100%;
+  border: 5px solid var(--text-color);
+
+  width: 40vh;
+  height: 40vh;
+
+  margin: 20px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: .5s all;
+  box-shadow: 3px 3px 3px var(--shadow-color);
+}
+
+.profileImageContainer .profileDiv:hover{
+  transition: .5s all;
+  box-shadow: 1px 1px 6px var(--shadow-color);
 }

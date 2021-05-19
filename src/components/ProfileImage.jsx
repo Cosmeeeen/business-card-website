@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProfileImage = () => {
+const ProfileImage = ( props ) => {
     return (
         <div className="profileImageContainer">
-            <h1>This is the profile image.</h1>
+            <div className="profileDiv" style={{backgroundImage:`url(${props.image})`}}></div>
         </div>
     );
 }
