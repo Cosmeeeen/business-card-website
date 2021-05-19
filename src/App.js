@@ -7,7 +7,10 @@ import ContactInformation from './components/ContactInformation.jsx';
 function App() {
   return (
     <div className="App">
-      <Title />
+      <Title>
+        <i className="fas fa-code"></i> {/* FontAweosme Custom Icon */}
+        <h1>Cosmin Ilie</h1> {/* Name */}
+      </Title>
       <ProfileImage />
       <SocialButtons />
       <ContactInformation />
