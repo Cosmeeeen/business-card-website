@@ -23,6 +23,7 @@ body{
 
   background-image: linear-gradient(to bottom right, var(--background-gradient-1), var(--background-gradient-2));
   color: var(--text-color);
+  text-shadow: 3px 3px 3px var(--shadow-color);
 }
 
 div{
@@ -30,4 +31,38 @@ div{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+h1{
+  transition: .3s all;
+  cursor: default;
+}
+
+h1:hover{
+  transition: .5s all;
+  text-shadow: 1px 1px 6px var(--shadow-color);
+}
+
+i{
+  transition: .5s all;
+}
+
+i:hover{
+  transition: .5s all;
+  text-shadow: 1px 1px 6px var(--shadow-color);
+}
+
+/* ===== TITLE CONTAINER ===== */
+
+.titleContainer h1{
+  font-size: 8vh;
+}
+
+.titleContainer i{
+  font-size: 6vh;
+  transition: .5s all;
+}
+
+.titleContainer h3{
+  font-size: 4vh;
 }

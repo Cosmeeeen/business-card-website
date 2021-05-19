@@ -10,6 +10,7 @@ function App() {
       <Title>
         <i className="fas fa-code"></i> {/* FontAweosme Custom Icon */}
         <h1>Cosmin Ilie</h1> {/* Name */}
+        <h3>Frontend + CMS Developer</h3> {/* Description */}
       </Title>
       <ProfileImage />
       <SocialButtons />
