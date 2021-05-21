@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 
+
+/* background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgba(15,27,49,1) 0%, rgba(0,112,218,1) 90% ); */
+
 :root{
-  --background-gradient-1: #1e272e;
-  --background-gradient-2: #485460;
+  --background-gradient-1: #000;
+  --background-gradient-2: #2c3e50;
   --text-color: #ecf0f1;
   --shadow-color: black;
   /* --highlight-color: #ff3f34; */
-  --highlight-color: #33d9b2;
+  --highlight-color: #c0392b;
 }
 
 *{
