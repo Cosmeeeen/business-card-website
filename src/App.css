@@ -162,3 +162,19 @@ i:hover{
 
   margin-right: 10px;
 }
+
+/* CHANGING COLOR LETTERS CONTAINER */
+
+.changingColorLettersContainer{
+  white-space: none;  
+}
+
+.changingColorLettersContainer span{
+  transition: .2s all;
+}
+
+.changingColorLettersContainer span:hover{
+  transition: .2s all;
+  color: var(--highlight-color);
+  
+}
