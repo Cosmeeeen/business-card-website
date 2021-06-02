@@ -115,11 +115,45 @@ i:hover{
 
   transition: .2s all;
   box-shadow: 3px 3px 3px var(--shadow-color);
+  display: flex;
+  justify-content: bottom;
+  flex-flow: column wrap;
+
+  overflow: hidden;
 }
 
 .profileImageContainer .profileDiv:hover{
   transition: .2s all;
   box-shadow: 1px 1px 6px var(--shadow-color);
+}
+
+.profileImageContainer .profileDiv.flipped{
+  transform: rotate3d(0, 1, 0, 180deg);
+  height: min(80vh, 150vw);
+  width: min(80vh, 150vw);
+}
+
+.profileImageContainer .profileDiv .contactButtonContainer{
+  cursor: pointer;
+  
+  background-color: rgba(44, 62, 80, .5);
+  width: 100%;
+  height: 20%;
+
+  margin-top: auto;
+
+  transition: .2s all;
+}
+
+.profileImageContainer .profileDiv .contactButtonContainer:hover{
+  background-color: rgba(44, 62, 80, .8);
+}
+
+.profileImageContainer .profileDiv .contactFormContainer{
+  transform: rotate3d(0, 1, 0, 180deg);
+  background-color: red;
+  width: 100%;
+  height: 80%;
 }
 
 /* ===== SOCIAL MEDIA BUTTONS CONTAINER ===== */
