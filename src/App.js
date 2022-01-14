@@ -17,7 +17,6 @@ function App() {
 
       <ProfileImage image={mainImage}/>
       <SocialButtons />
-//       <ContactInformation phone="+4074 016 077" email="iliemcosmin@yahoo.ro"/>
     </div>
   );
 }
